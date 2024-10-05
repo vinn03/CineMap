@@ -9,10 +9,10 @@ with open("users.json", "r") as u:
 with open("films.json", "r") as f:
     films = json.load(f)
 
-@app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
+@app.route("/user", methods=["GET"])
+def get_user():
+    return 
 
-@app.route("/map")
-def map():
+@app.route("/films")
+def get_films():
     return "<p>Map</p>" 
