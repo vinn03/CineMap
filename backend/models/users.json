@@ -1,1 +1,14 @@
-
+[
+    {
+        "email": "test@gmail.com",
+        "display_name": "John Doe",
+        "password": "1234",
+        "films": [1, 3]
+    },
+    {
+        "email": "janedoe@gmail.com",
+        "display_name": "Jane Doe",
+        "password": "1234",
+        "films": [2, 4]
+    }
+]
