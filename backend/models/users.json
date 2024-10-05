@@ -1,0 +1,7 @@
+{
+"users": [
+    {"displayname":"John"},
+    {"firstName":"Anna", "lastName":"Smith"},
+    {"firstName":"Peter", "lastName":"Jones"}
+]
+}
