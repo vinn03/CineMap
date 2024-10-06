@@ -6,22 +6,37 @@ import "./sections.css";
 // handle dropdown that switches between newfilm and newpost
 const AddNew: React.FC = () => {
   const [selectedType, setSelectedType] = useState<string>("Post");
+  const [showForm, setShowForm] = useState<boolean>(false);
 
   // Function to handle the change in dropdown selection
   const handleTypeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedType(e.target.value);
   };
 
-  return (
-    <div style={{ display: "flex", alignItems: "center" }}>
-      {/* Button that changes based on selected dropdown */}
-      <button style={{ marginRight: "10px" }}>New {selectedType}</button>
+  const handleButtonClick = () => {
+    setShowForm(true); // Show the form when the button is clicked
+  };
 
-      {/* Dropdown for selecting Post or Film */}
-      <select value={selectedType} onChange={handleTypeChange}>
-        <option value="Post">Post</option>
-        <option value="Film">Film</option>
-      </select>
+  return (
+    <div
+      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+    >
+      <div
+        style={{ display: "flex", alignItems: "center", marginBottom: "10px" }}
+      >
+        <button onClick={handleButtonClick} style={{ marginRight: "10px" }}>
+          New {selectedType}
+        </button>
+
+        <select value={selectedType} onChange={handleTypeChange}>
+          <option value="Post">Post</option>
+          <option value="Film">Film</option>
+        </select>
+      </div>
+
+      {showForm && (
+        <div>{selectedType === "Post" ? <NewPost /> : <NewFilm />}</div>
+      )}
     </div>
   );
 };
