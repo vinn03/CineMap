@@ -9,7 +9,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	transition: transform 0.3s ease; /* Smooth transition for expand/collapse */
+	transition: transform 0.5s ease; /* Smooth transition for expand/collapse */
 	z-index: 1000; /* Make sure it's higher than other elements */
 	overflow: hidden; /* Prevent overflow when collapsed */
 }
@@ -17,18 +17,13 @@
 /* Expanded Sidebar */
 .sidebar-expanded {
 	width: 250px; /* Full width when expanded */
-	transform: translateX(0); /* Fully visible when expanded */
-	justify-content: top;
+	display: flex;
 }
 
 /* Collapsed Sidebar */
 .sidebar-collapsed {
-	width: 100px; /* Increased width for better visibility */
-	transform: translateX(-0px); /* No need to push off-screen */
+	width: 90px; /* Increased width for better visibility */
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
 	background-color: beige;
 	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 	transition: transform 0.3s ease;
