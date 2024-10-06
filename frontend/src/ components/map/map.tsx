@@ -39,7 +39,7 @@ const CustomZoomControl: React.FC<{ position: string }> = ({ position }) => {
     return () => {
       map.removeControl(zoomControl); // Remove the control from the map
     };
-  }, [map, position]); // Dependencies for effect
+  }, []);
 
   return null; // This component doesn't render anything visible
 };
