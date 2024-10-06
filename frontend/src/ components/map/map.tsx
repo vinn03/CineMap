@@ -9,9 +9,10 @@ const position = [49.276, -122.918]; // SFU
 
 interface MapProps {
   locations: any[];
+  user: any;
 }
 
-const Map: React.FC<MapProps> = ({ locations }) => {
+const Map: React.FC<MapProps> = ({ locations, user }) => {
   // This function creates markers and popups
 
   const [map, setMap] = useState(null);
@@ -34,6 +35,7 @@ const Map: React.FC<MapProps> = ({ locations }) => {
           <div>
             <h3>${location.title}</h3>
             <img src="${location.img}" alt="${location.title}" style="width: 100px;" />
+            <h4>
           </div>
         `;
 

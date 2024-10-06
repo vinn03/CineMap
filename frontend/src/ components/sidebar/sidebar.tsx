@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import SavedFilms from "../sections/saved-films";
 import SearchBar from "../searchbar/search-bar";
 import AddNew from "../sections/add-new";
-import Films from "../../../models/films.json";
-import NewPost from "../sections/new-post";
 import "./sidebar.css";
 
 // Menu to right component
@@ -75,10 +73,12 @@ const SidebarExpanded = ({
   setActiveSection,
   onOverviewShown,
   setLocations,
+  films,
   user,
 }: {
   toggleSidebar: () => void;
   activeSection: number | null;
+  films: any[];
   user: any;
   setActiveSection: (sectionIndex: number) => void;
   onOverviewShown: (component: any) => void;
@@ -127,11 +127,13 @@ const SidebarExpanded = ({
               <SearchBar
                 onOverviewShown={onOverviewShown}
                 setLocations={setLocations}
+                user={user}
+                films={films}
               />
             )}
             {activeSection === 2 && (
               <SavedFilms
-                films={Films}
+                films={films}
                 onOverviewShown={onOverviewShown}
                 setLocations={setLocations}
                 user={user}
@@ -153,7 +155,7 @@ const SidebarExpanded = ({
 };
 
 // expandable, click handling sidebar
-const Sidebar = ({ setLocations, user }) => {
+const Sidebar = ({ setLocations, user, films }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [activeSection, setActiveSection] = useState<number | null>(null);
   const [OverviewComponent, setOverviewComponent] = useState<any>(null);
@@ -178,6 +180,7 @@ const Sidebar = ({ setLocations, user }) => {
           setActiveSection={setActiveSection}
           onOverviewShown={handleOverviewShown}
           setLocations={setLocations}
+          films={films}
           user={user}
         />
       ) : (
