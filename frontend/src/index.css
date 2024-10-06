@@ -1,14 +1,17 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
 .entry {
-    height: 40px;
-    width: 100%;
-    margin-top: 10px;
-    outline: inherit;    
-    border: black 1px solid;
-    border-radius: 8px;
-    background-color: white;
-    font-size: medium;
+	height: 40px;
+	width: 100%;
+	background-color: white;
+	font-size: medium;
 }
 
 .entry:active {
-    background-color: aliceblue;
+	background-color: aliceblue;
 }
