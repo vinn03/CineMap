@@ -53,10 +53,10 @@
   background-color: #f0f0f0;
 }
 
-.content-section {
+/* .content-section {
   flex-grow: 1;
-  padding: 1rem;
-}
+  justify-content: center;
+} */
 
 .profile-section {
   padding: 1rem;
