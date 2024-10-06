@@ -1,233 +1,269 @@
 [
-	{
-		"email": "test@gmail.com",
-		"display_name": "John Doe",
-		"password": "1234",
-		"films": [1, 3],
-		"posts": [
-			{
-				"movie_id": 1,
-				"location_id": 1,
-				"review": "This is a great location! The Ohio State Reformatory really brings the movie to life."
-			},
-			{
-				"movie_id": 1,
-				"location_id": 3,
-				"review": "Weather was unfortunate, but it was stunning to see Zihuatanejo Beach in person!"
-			},
-			{
-				"movie_id": 3,
-				"location_id": 1,
-				"review": "Lower Wacker Drive feels so much more intense when you know the action that took place here in The Dark Knight!"
-			},
-			{
-				"movie_id": 3,
-				"location_id": 2,
-				"review": "Trump Tower is a great spot! I loved seeing where some of the movie's key scenes were filmed."
-			},
-			{
-				"movie_id": 1,
-				"location_id": 2,
-				"review": "The final scene at Buxton is breathtaking! The emotions it evokes are unforgettable."
-			}
-		]
-	},
-	{
-		"email": "janedoe@gmail.com",
-		"display_name": "Jane Doe",
-		"password": "1234",
-		"films": [2, 4],
-		"posts": [
-			{
-				"movie_id": 2,
-				"location_id": 1,
-				"review": "Visiting the Corleone Compound was a dream! It's just as majestic as portrayed in the film."
-			},
-			{
-				"movie_id": 2,
-				"location_id": 3,
-				"review": "Savoca, Sicily is breathtaking! The Bar Vitelli is a must-visit for fans of The Godfather."
-			},
-			{
-				"movie_id": 4,
-				"location_id": 1,
-				"review": "Timberline Lodge gave me chills! It felt like I stepped right into The Shining."
-			},
-			{
-				"movie_id": 4,
-				"location_id": 3,
-				"review": "The Ahwahnee Hotel is stunning! It definitely captures the essence of the Overlook Hotel."
-			},
-			{
-				"movie_id": 2,
-				"location_id": 2,
-				"review": "Beverly Estate is beautifully preserved! You can feel the history here."
-			}
-		]
-	},
-	{
-		"email": "mike@example.com",
-		"display_name": "Mike Smith",
-		"password": "5678",
-		"films": [1, 2, 5],
-		"posts": [
-			{
-				"movie_id": 1,
-				"location_id": 2,
-				"review": "Buxton is such a peaceful spot. The final scene of the movie just adds to its charm!"
-			},
-			{
-				"movie_id": 2,
-				"location_id": 2,
-				"review": "Beverly Estate is beautiful, but it was hard to find. Worth it for the photos!"
-			},
-			{
-				"movie_id": 5,
-				"location_id": 1,
-				"review": "Griffith Observatory has the best views! It's a magical place for a date night."
-			},
-			{
-				"movie_id": 5,
-				"location_id": 3,
-				"review": "The Colorado Street Bridge is so iconic! Seeing it in person was a real treat."
-			},
-			{
-				"movie_id": 1,
-				"location_id": 1,
-				"review": "Ohio State Reformatory has such a haunting atmosphere. It's a must-see for any fan!"
-			}
-		]
-	},
-	{
-		"email": "sarahjane@example.com",
-		"display_name": "Sarah Jane",
-		"password": "abcd",
-		"films": [3, 4, 5],
-		"posts": [
-			{
-				"movie_id": 3,
-				"location_id": 3,
-				"review": "The Cardington Airship Hangars are awe-inspiring! You can feel the history there."
-			},
-			{
-				"movie_id": 4,
-				"location_id": 2,
-				"review": "Elstree Studios is a fun tour! Loved learning about the behind-the-scenes of The Shining."
-			},
-			{
-				"movie_id": 5,
-				"location_id": 2,
-				"review": "Angels Flight is a hidden gem! A great spot to relax and take in the views."
-			},
-			{
-				"movie_id": 5,
-				"location_id": 3,
-				"review": "Colorado Street Bridge at sunset is magical. It's a great spot for photos!"
-			},
-			{
-				"movie_id": 3,
-				"location_id": 1,
-				"review": "Lower Wacker Drive is bustling with energy! You can almost hear the movie playing in your head."
-			}
-		]
-	},
-	{
-		"email": "emilybrown@example.com",
-		"display_name": "Emily Brown",
-		"password": "qwerty",
-		"films": [1, 3, 5],
-		"posts": [
-			{
-				"movie_id": 1,
-				"location_id": 1,
-				"review": "Ohio State Reformatory is eerie yet fascinating. A must-visit for movie buffs!"
-			},
-			{
-				"movie_id": 1,
-				"location_id": 3,
-				"review": "Zihuatanejo Beach is a paradise! The perfect getaway spot."
-			},
-			{
-				"movie_id": 3,
-				"location_id": 2,
-				"review": "The atmosphere at Trump Tower is impressive. Great for photos!"
-			},
-			{
-				"movie_id": 5,
-				"location_id": 1,
-				"review": "Griffith Observatory is breathtaking! The views of the city are unparalleled."
-			},
-			{
-				"movie_id": 5,
-				"location_id": 3,
-				"review": "I loved walking across Colorado Street Bridge! The views are stunning."
-			}
-		]
-	},
-	{
-		"email": "robertmartin@example.com",
-		"display_name": "Robert Martin",
-		"password": "asdfgh",
-		"films": [2, 4, 5],
-		"posts": [
-			{
-				"movie_id": 2,
-				"location_id": 1,
-				"review": "The Corleone Compound is majestic! Truly a sight to behold."
-			},
-			{
-				"movie_id": 4,
-				"location_id": 1,
-				"review": "Timberline Lodge is chilling, just like the movie. A great place for horror fans!"
-			},
-			{
-				"movie_id": 5,
-				"location_id": 2,
-				"review": "Angels Flight is quirky and fun! Perfect for a light outing."
-			},
-			{
-				"movie_id": 2,
-				"location_id": 3,
-				"review": "Savoca is beautiful! The scenery is breathtaking and the food is even better."
-			},
-			{
-				"movie_id": 4,
-				"location_id": 3,
-				"review": "The Ahwahnee Hotel is stunning! It felt like I was stepping into a different world."
-			}
-		]
-	},
-	{
-		"email": "oliviawhite@example.com",
-		"display_name": "Olivia White",
-		"password": "zxcvbn",
-		"films": [3, 4, 5],
-		"posts": [
-			{
-				"movie_id": 3,
-				"location_id": 1,
-				"review": "Lower Wacker Drive is iconic! The vibe is electric."
-			},
-			{
-				"movie_id": 4,
-				"location_id": 2,
-				"review": "Elstree Studios gives you a real taste of filmmaking. A must-visit!"
-			},
-			{
-				"movie_id": 5,
-				"location_id": 1,
-				"review": "Griffith Observatory is a stargazer's dream! Absolutely breathtaking."
-			},
-			{
-				"movie_id": 5,
-				"location_id": 3,
-				"review": "Colorado Street Bridge is picturesque! Perfect for photography enthusiasts."
-			},
-			{
-				"movie_id": 3,
-				"location_id": 2,
-				"review": "Trump Tower is modern and luxurious! Great place to unwind."
-			}
-		]
-	}
+    {
+        "email": "test@gmail.com",
+        "display_name": "John Doe",
+        "password": "1234",
+        "films": [
+            1,
+            3
+        ],
+        "posts": [
+            {
+                "movie_id": 1,
+                "location_id": 1,
+                "review": "This is a great location! The Ohio State Reformatory really brings the movie to life."
+            },
+            {
+                "movie_id": 1,
+                "location_id": 3,
+                "review": "Weather was unfortunate, but it was stunning to see Zihuatanejo Beach in person!"
+            },
+            {
+                "movie_id": 3,
+                "location_id": 1,
+                "review": "Lower Wacker Drive feels so much more intense when you know the action that took place here in The Dark Knight!"
+            },
+            {
+                "movie_id": 3,
+                "location_id": 2,
+                "review": "Trump Tower is a great spot! I loved seeing where some of the movie's key scenes were filmed."
+            },
+            {
+                "movie_id": 1,
+                "location_id": 2,
+                "review": "The final scene at Buxton is breathtaking! The emotions it evokes are unforgettable."
+            },
+            {
+                "movie_id": 1,
+                "location_id": 2,
+                "review": "Test"
+            },
+            {
+                "movie_id": 1,
+                "location_id": 1,
+                "review": "Test"
+            }
+        ]
+    },
+    {
+        "email": "janedoe@gmail.com",
+        "display_name": "Jane Doe",
+        "password": "1234",
+        "films": [
+            2,
+            4
+        ],
+        "posts": [
+            {
+                "movie_id": 2,
+                "location_id": 1,
+                "review": "Visiting the Corleone Compound was a dream! It's just as majestic as portrayed in the film."
+            },
+            {
+                "movie_id": 2,
+                "location_id": 3,
+                "review": "Savoca, Sicily is breathtaking! The Bar Vitelli is a must-visit for fans of The Godfather."
+            },
+            {
+                "movie_id": 4,
+                "location_id": 1,
+                "review": "Timberline Lodge gave me chills! It felt like I stepped right into The Shining."
+            },
+            {
+                "movie_id": 4,
+                "location_id": 3,
+                "review": "The Ahwahnee Hotel is stunning! It definitely captures the essence of the Overlook Hotel."
+            },
+            {
+                "movie_id": 2,
+                "location_id": 2,
+                "review": "Beverly Estate is beautifully preserved! You can feel the history here."
+            }
+        ]
+    },
+    {
+        "email": "mike@example.com",
+        "display_name": "Mike Smith",
+        "password": "5678",
+        "films": [
+            1,
+            2,
+            5
+        ],
+        "posts": [
+            {
+                "movie_id": 1,
+                "location_id": 2,
+                "review": "Buxton is such a peaceful spot. The final scene of the movie just adds to its charm!"
+            },
+            {
+                "movie_id": 2,
+                "location_id": 2,
+                "review": "Beverly Estate is beautiful, but it was hard to find. Worth it for the photos!"
+            },
+            {
+                "movie_id": 5,
+                "location_id": 1,
+                "review": "Griffith Observatory has the best views! It's a magical place for a date night."
+            },
+            {
+                "movie_id": 5,
+                "location_id": 3,
+                "review": "The Colorado Street Bridge is so iconic! Seeing it in person was a real treat."
+            },
+            {
+                "movie_id": 1,
+                "location_id": 1,
+                "review": "Ohio State Reformatory has such a haunting atmosphere. It's a must-see for any fan!"
+            }
+        ]
+    },
+    {
+        "email": "sarahjane@example.com",
+        "display_name": "Sarah Jane",
+        "password": "abcd",
+        "films": [
+            3,
+            4,
+            5
+        ],
+        "posts": [
+            {
+                "movie_id": 3,
+                "location_id": 3,
+                "review": "The Cardington Airship Hangars are awe-inspiring! You can feel the history there."
+            },
+            {
+                "movie_id": 4,
+                "location_id": 2,
+                "review": "Elstree Studios is a fun tour! Loved learning about the behind-the-scenes of The Shining."
+            },
+            {
+                "movie_id": 5,
+                "location_id": 2,
+                "review": "Angels Flight is a hidden gem! A great spot to relax and take in the views."
+            },
+            {
+                "movie_id": 5,
+                "location_id": 3,
+                "review": "Colorado Street Bridge at sunset is magical. It's a great spot for photos!"
+            },
+            {
+                "movie_id": 3,
+                "location_id": 1,
+                "review": "Lower Wacker Drive is bustling with energy! You can almost hear the movie playing in your head."
+            }
+        ]
+    },
+    {
+        "email": "emilybrown@example.com",
+        "display_name": "Emily Brown",
+        "password": "qwerty",
+        "films": [
+            1,
+            3,
+            5
+        ],
+        "posts": [
+            {
+                "movie_id": 1,
+                "location_id": 1,
+                "review": "Ohio State Reformatory is eerie yet fascinating. A must-visit for movie buffs!"
+            },
+            {
+                "movie_id": 1,
+                "location_id": 3,
+                "review": "Zihuatanejo Beach is a paradise! The perfect getaway spot."
+            },
+            {
+                "movie_id": 3,
+                "location_id": 2,
+                "review": "The atmosphere at Trump Tower is impressive. Great for photos!"
+            },
+            {
+                "movie_id": 5,
+                "location_id": 1,
+                "review": "Griffith Observatory is breathtaking! The views of the city are unparalleled."
+            },
+            {
+                "movie_id": 5,
+                "location_id": 3,
+                "review": "I loved walking across Colorado Street Bridge! The views are stunning."
+            }
+        ]
+    },
+    {
+        "email": "robertmartin@example.com",
+        "display_name": "Robert Martin",
+        "password": "asdfgh",
+        "films": [
+            2,
+            4,
+            5
+        ],
+        "posts": [
+            {
+                "movie_id": 2,
+                "location_id": 1,
+                "review": "The Corleone Compound is majestic! Truly a sight to behold."
+            },
+            {
+                "movie_id": 4,
+                "location_id": 1,
+                "review": "Timberline Lodge is chilling, just like the movie. A great place for horror fans!"
+            },
+            {
+                "movie_id": 5,
+                "location_id": 2,
+                "review": "Angels Flight is quirky and fun! Perfect for a light outing."
+            },
+            {
+                "movie_id": 2,
+                "location_id": 3,
+                "review": "Savoca is beautiful! The scenery is breathtaking and the food is even better."
+            },
+            {
+                "movie_id": 4,
+                "location_id": 3,
+                "review": "The Ahwahnee Hotel is stunning! It felt like I was stepping into a different world."
+            }
+        ]
+    },
+    {
+        "email": "oliviawhite@example.com",
+        "display_name": "Olivia White",
+        "password": "zxcvbn",
+        "films": [
+            3,
+            4,
+            5
+        ],
+        "posts": [
+            {
+                "movie_id": 3,
+                "location_id": 1,
+                "review": "Lower Wacker Drive is iconic! The vibe is electric."
+            },
+            {
+                "movie_id": 4,
+                "location_id": 2,
+                "review": "Elstree Studios gives you a real taste of filmmaking. A must-visit!"
+            },
+            {
+                "movie_id": 5,
+                "location_id": 1,
+                "review": "Griffith Observatory is a stargazer's dream! Absolutely breathtaking."
+            },
+            {
+                "movie_id": 5,
+                "location_id": 3,
+                "review": "Colorado Street Bridge is picturesque! Perfect for photography enthusiasts."
+            },
+            {
+                "movie_id": 3,
+                "location_id": 2,
+                "review": "Trump Tower is modern and luxurious! Great place to unwind."
+            }
+        ]
+    }
 ]

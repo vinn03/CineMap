@@ -3,8 +3,13 @@ import NewFilm from "./new-film";
 import NewPost from "./new-post";
 import "./sections.css";
 
+interface AddNewProps {
+  user: any;
+  films: any[];
+}
+
 // handle dropdown that switches between newfilm and newpost
-const AddNew: React.FC = () => {
+const AddNew: React.FC<AddNewProps> = ({ user, films }) => {
   const [selectedType, setSelectedType] = useState<string>("Post");
 
   // Function to handle the change in dropdown selection
@@ -25,7 +30,13 @@ const AddNew: React.FC = () => {
         </select>
       </div>
 
-      <div>{selectedType === "Post" ? <NewPost /> : <NewFilm />}</div>
+      <div>
+        {selectedType === "Post" ? (
+          <NewPost user={user} films={films} />
+        ) : (
+          <NewFilm />
+        )}
+      </div>
     </div>
   );
 };

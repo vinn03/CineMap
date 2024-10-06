@@ -8,7 +8,6 @@ const NewFilm: React.FC = () => {
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    console.log({ name, value });
     switch (name) {
       case "title":
         setTitle(value);
@@ -31,6 +30,21 @@ const NewFilm: React.FC = () => {
       year,
       genre,
     };
+
+    fetch("http://127.0.0.1:5000/film-post", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newFilm),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Success:", data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
   };
 
   return (

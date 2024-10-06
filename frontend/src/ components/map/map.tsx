@@ -29,9 +29,7 @@ const Map: React.FC<MapProps> = ({ locations, user }) => {
       // Create a marker
       const marker = L.marker([lat, lng]).addTo(map);
 
-      console.log(user.posts);
-
-      const post = user.posts.find(
+      const posts = user.posts.filter(
         (post) =>
           post.location_id === location.id &&
           post.movie_id === location.movie_id
@@ -40,9 +38,19 @@ const Map: React.FC<MapProps> = ({ locations, user }) => {
       const popupContent = `
           <div>
             <h3>${location.title}</h3>
-            <img src="${location.img}" alt="${location.title}" style="width: 100px;" />
+            <img src="${location.img}" alt="${
+        location.title
+      }" style="width: 100px;" />
             <h4>Posts</h4>
-            <p>${post.review}</p>
+            ${posts
+              .map(
+                (post) => `
+                  <div>
+                    <p>${post.review}</p>
+                  </div>
+                `
+              )
+              .join("")}
           </div>
         `;
 
