@@ -1,101 +1,102 @@
 /* Sidebar - Common Styles */
 
 .sidebar {
-	position: fixed; /* Ensure it's fixed over the viewport */
-	top: 0;
-	left: 0; /* Sidebar will always start from the left side */
-	height: 100vh;
-	background-color: beige;
-	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	transition: transform 0.5s ease; /* Smooth transition for expand/collapse */
-	z-index: 1000; /* Make sure it's higher than other elements */
-	overflow: hidden; /* Prevent overflow when collapsed */
+  position: fixed; /* Ensure it's fixed over the viewport */
+  top: 0;
+  left: 0; /* Sidebar will always start from the left side */
+  height: 100vh;
+  background-color: beige;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.5s ease; /* Smooth transition for expand/collapse */
+  z-index: 1000; /* Make sure it's higher than other elements */
+  overflow: hidden; /* Prevent overflow when collapsed */
 }
 
 /* Expanded Sidebar */
 .sidebar-expanded {
-	width: 250px; /* Full width when expanded */
-	display: flex;
+  width: 350px; /* Full width when expanded */
+  display: flex;
+  overflow: hidden;
 }
 
 /* Collapsed Sidebar */
 .sidebar-collapsed {
-	width: 90px; /* Increased width for better visibility */
-	display: flex;
-	background-color: beige;
-	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-	transition: transform 0.3s ease;
+  width: 90px; /* Increased width for better visibility */
+  display: flex;
+  background-color: beige;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
 /* Adjust Button Styling */
 .collapsed-btn {
-	width: 100%;
-	text-align: center;
-	cursor: pointer;
-	padding: 0.75rem 0;
-	transition: background-color 0.3s;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.75rem 0;
+  transition: background-color 0.3s;
 }
 
 .collapsed-btn:hover {
-	background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 /* Icon Styling for Sidebar */
 .collapsed-icon {
-	width: 30px;
-	height: 30px; /* Adjust size for icons */
-	object-fit: contain; /* Ensure the images scale properly */
+  width: 30px;
+  height: 30px; /* Adjust size for icons */
+  object-fit: contain; /* Ensure the images scale properly */
 }
 
 .collapsed-icon.profile-icon {
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 /* Expanded Sidebar Button Styles */
 .sidebar-btn {
-	display: block;
-	background: none;
-	border: none;
-	padding: 0.75rem 1rem;
-	text-align: left;
-	width: 100%;
-	font-size: 1.2rem;
-	cursor: pointer;
-	transition: background-color 0.3s;
+  display: block;
+  background: none;
+  border: none;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  width: 100%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .sidebar-btn.active {
-	background-color: #ddd;
+  background-color: #ddd;
 }
 
 .sidebar-btn:hover {
-	background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 .top-sections {
-	padding: 1rem;
+  padding: 1rem;
 }
 
 .content-section {
-	flex-grow: 1;
-	padding: 1rem;
+  flex-grow: 1;
+  padding: 1rem;
 }
 
 .profile-section {
-	padding: 1rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile-icon {
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	background-color: #ccc; /* Placeholder for the profile icon */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ccc; /* Placeholder for the profile icon */
 }
