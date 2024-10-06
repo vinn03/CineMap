@@ -1,24 +1,66 @@
-/* Sidebar.css */
+/* Sidebar - Common Styles */
 .sidebar {
-	position: fixed; /* Ensure it's fixed over the map */
+	position: fixed; /* Ensure it's fixed over the viewport */
 	top: 0;
-	left: 0;
-	width: 250px;
+	left: 0; /* Sidebar will always start from the left side */
 	height: 100vh;
 	background-color: beige;
 	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	transition: transform 0.3s ease; /* Smooth transition for expand/collapse */
+	z-index: 1000; /* Make sure it's higher than other elements */
+	overflow: hidden; /* Prevent overflow when collapsed */
+}
+
+/* Expanded Sidebar */
+.sidebar-expanded {
+	width: 250px; /* Full width when expanded */
+	transform: translateX(0); /* Fully visible when expanded */
+	justify-content: top;
+}
+
+/* Collapsed Sidebar */
+.sidebar-collapsed {
+	width: 100px; /* Increased width for better visibility */
+	transform: translateX(-0px); /* No need to push off-screen */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	background-color: beige;
+	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 	transition: transform 0.3s ease;
-	transform: translateX(0);
-	z-index: 1000; /* Make sure it's higher than the map's z-index */
 }
 
-.top-sections {
-	padding: 1rem;
+/* Adjust Button Styling */
+.collapsed-btn {
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+	padding: 0.75rem 0;
+	transition: background-color 0.3s;
 }
 
+.collapsed-btn:hover {
+	background-color: #f0f0f0;
+}
+
+/* Icon Styling for Sidebar */
+.collapsed-icon {
+	width: 30px;
+	height: 30px; /* Adjust size for icons */
+	object-fit: contain; /* Ensure the images scale properly */
+}
+
+.collapsed-icon.profile-icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+/* Expanded Sidebar Button Styles */
 .sidebar-btn {
 	display: block;
 	background: none;
@@ -37,6 +79,10 @@
 
 .sidebar-btn:hover {
 	background-color: #f0f0f0;
+}
+
+.top-sections {
+	padding: 1rem;
 }
 
 .content-section {
