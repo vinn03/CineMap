@@ -15,10 +15,6 @@
 	z-index: 1000; /* Make sure it's higher than the map's z-index */
 }
 
-.sidebar.open {
-	transform: translateX(0);
-}
-
 .top-sections {
 	padding: 1rem;
 }
