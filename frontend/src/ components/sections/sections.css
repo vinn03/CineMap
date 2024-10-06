@@ -1,9 +1,16 @@
 .film-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
 }
 
 .entry:active {
     background-color: aliceblue;
+}
+
+.new-film-form {
+    
+	padding: "20px";
+	background: "#fff";
+	width: "300px";
 }
