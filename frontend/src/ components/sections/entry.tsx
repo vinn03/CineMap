@@ -9,48 +9,42 @@ interface EntryProps {
   type: string;
   info: any;
   onOverviewShown: (component: any) => void;
+  setLocations: (locations: any[]) => void;
 }
 
-const Entry: React.FC<EntryProps> = ({ name, type, info, onOverviewShown }) => {
+const Entry: React.FC<EntryProps> = ({
+  name,
+  type,
+  info,
+  onOverviewShown,
+  setLocations,
+}) => {
   const [overviewShown, setOverviewShown] = useState(false);
 
   const toggleOverview = () => {
-    console.log("toggling overview to: ", !overviewShown);
     setOverviewShown(!overviewShown);
   };
 
   useEffect(() => {
-    console.log("useEffect triggered with overviewShown:", overviewShown);
     if (overviewShown) {
       const overviewComponent = renderOverview();
       onOverviewShown(overviewComponent);
     } else {
-      console.log("Closing overview");
       onOverviewShown(null);
     }
   }, [overviewShown]);
 
   const renderOverview = () => {
-    if (type === "film") {
-      return (
-        <FilmOverview
-          title={name}
-          year={info.year}
-          genre={info.genre}
-          locations={info.locations}
-          toggleOverview={toggleOverview}
-        />
-      );
-    } else if (type === "user") {
-      return (
-        <UserOverview
-          display_name={info.display_name}
-          user_films={info.films}
-          onOverviewShown={onOverviewShown}
-        />
-      );
-    }
-    return null;
+    return (
+      <FilmOverview
+        title={name}
+        year={info.year}
+        genre={info.genre}
+        locations={info.locations}
+        toggleOverview={toggleOverview}
+        setLocations={setLocations}
+      />
+    );
   };
 
   return (

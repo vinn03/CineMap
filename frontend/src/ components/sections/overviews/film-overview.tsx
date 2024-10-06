@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./overview.css";
 
 interface FilmOverviewProps {
@@ -6,6 +6,7 @@ interface FilmOverviewProps {
   year: string;
   genre: string;
   locations: any[];
+  setLocations: (locations: any[]) => void;
 }
 
 const FilmOverview: React.FC<FilmOverviewProps> = ({
@@ -13,7 +14,12 @@ const FilmOverview: React.FC<FilmOverviewProps> = ({
   year,
   genre,
   locations,
+  setLocations,
 }) => {
+  useEffect(() => {
+    setLocations(locations);
+  }, [locations]);
+
   return (
     <div className="overview">
       <button className="close" onClick={() => window.location.reload()}>
