@@ -4,6 +4,8 @@ import SearchBar from "../searchbar/search-bar";
 import NewFilm from "../sections/new-film";
 import "./sidebar.css";
 
+// Menu to right component
+
 // SidebarCollapsed component
 const SidebarCollapsed = ({
 	toggleSidebar,
@@ -64,8 +66,7 @@ const SidebarCollapsed = ({
 	);
 };
 
-// Sidebar Expanded
-// SidebarExpanded component
+// Sidebar Expanded component
 const SidebarExpanded = ({
 	toggleSidebar,
 	activeSection,
@@ -132,6 +133,8 @@ const SidebarExpanded = ({
 		</>
 	);
 };
+
+
 
 // expandable, click handling sidebar
 const Sidebar = () => {
