@@ -6,9 +6,14 @@ import "../../index.css";
 interface SavedFilmsProps {
   films: any[];
   onOverviewShown: (component: any) => void;
+  setLocations: (locations: any[]) => void;
 }
 
-const SavedFilms: React.FC<SavedFilmsProps> = ({ films, onOverviewShown }) => {
+const SavedFilms: React.FC<SavedFilmsProps> = ({
+  films,
+  onOverviewShown,
+  setLocations,
+}) => {
   return (
     <div className="section">
       {films.map((film, index) => (
@@ -18,6 +23,7 @@ const SavedFilms: React.FC<SavedFilmsProps> = ({ films, onOverviewShown }) => {
           type="film"
           info={film}
           onOverviewShown={onOverviewShown}
+          setLocations={setLocations}
         />
       ))}
     </div>

@@ -73,11 +73,13 @@ const SidebarExpanded = ({
   activeSection,
   setActiveSection,
   onOverviewShown,
+  setLocations,
 }: {
   toggleSidebar: () => void;
   activeSection: number | null;
   setActiveSection: (sectionIndex: number) => void;
   onOverviewShown: (component: any) => void;
+  setLocations: (locations: any[]) => void;
 }) => {
   const toggleSection = (sectionIndex: number) => {
     if (activeSection === sectionIndex) {
@@ -119,10 +121,17 @@ const SidebarExpanded = ({
         <div>
           <div className="content-section">
             {activeSection === 1 && (
-              <SearchBar onOverviewShown={onOverviewShown} />
+              <SearchBar
+                onOverviewShown={onOverviewShown}
+                setLocations={setLocations}
+              />
             )}
             {activeSection === 2 && (
-              <SavedFilms films={Films} onOverviewShown={onOverviewShown} />
+              <SavedFilms
+                films={Films}
+                onOverviewShown={onOverviewShown}
+                setLocations={setLocations}
+              />
             )}
             {activeSection === 3 && <NewFilm />}
           </div>
@@ -139,13 +148,11 @@ const SidebarExpanded = ({
   );
 };
 
-
-
 // expandable, click handling sidebar
-const Sidebar = () => {
+const Sidebar = ({ setLocations }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [activeSection, setActiveSection] = useState<number | null>(null);
-  const [overviewComponent, setOverviewComponent] = useState<any>(null);
+  const [OverviewComponent, setOverviewComponent] = useState<any>(null);
 
   const toggleSidebar = () => {
     setIsExpanded(!isExpanded);
@@ -155,7 +162,6 @@ const Sidebar = () => {
     if (component) {
       toggleSidebar();
     }
-    console.log({ component });
     setOverviewComponent(component);
   };
 
@@ -167,6 +173,7 @@ const Sidebar = () => {
           activeSection={activeSection}
           setActiveSection={setActiveSection}
           onOverviewShown={handleOverviewShown}
+          setLocations={setLocations}
         />
       ) : (
         <SidebarCollapsed
@@ -174,7 +181,7 @@ const Sidebar = () => {
           setActiveSection={setActiveSection}
         />
       )}
-      {overviewComponent ? overviewComponent : null}
+      {OverviewComponent ? OverviewComponent : null}
     </div>
   );
 };

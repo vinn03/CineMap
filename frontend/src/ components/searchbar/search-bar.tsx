@@ -4,7 +4,7 @@ import Films from "../../../models/films.json";
 import Users from "../../../models/users.json";
 import "../../index.css";
 
-function SearchBar({ onOverviewShown }) {
+function SearchBar({ onOverviewShown, setLocations }) {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("films");
 
@@ -19,8 +19,6 @@ function SearchBar({ onOverviewShown }) {
   const handleKeyPress = (e) => {
     const handleSearch = (query) => {
       if (!query) return;
-
-      console.log("Searched for:", query);
     };
 
     if (e.key === "Enter") {
@@ -57,6 +55,7 @@ function SearchBar({ onOverviewShown }) {
                 type="film"
                 info={d}
                 onOverviewShown={onOverviewShown}
+                setLocations={setLocations}
               />
             ))
           : filteredUsers.map((d) => (
@@ -66,6 +65,7 @@ function SearchBar({ onOverviewShown }) {
                 type="user"
                 info={d}
                 onOverviewShown={onOverviewShown}
+                setLocations={setLocations}
               />
             ))}
       </div>
