@@ -5,6 +5,9 @@ import "./sidebar.css";
 
 const Sidebar: React.FC = () => {
   const [activeSection, setActiveSection] = useState<number | null>(null); // Track the active section (null means sidebar is collapsed)
+
+  const films = ["Film 1", "Film 2", "Film 3", "Film 4", "Film 5"]; // Dummy data for saved films
+
   const toggleSection = (sectionIndex: number) => {
     if (activeSection === sectionIndex) {
       setActiveSection(null); // Collapse if the same section is clicked
