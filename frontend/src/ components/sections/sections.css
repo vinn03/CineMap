@@ -4,10 +4,6 @@
 	justify-content: start;
 }
 
-.entry:active {
-    background-color: aliceblue;
-}
-
 .new-film-form {
     
 	padding: "20px";
