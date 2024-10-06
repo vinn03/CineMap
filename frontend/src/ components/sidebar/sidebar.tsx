@@ -3,6 +3,7 @@ import SavedFilms from "../sections/saved-films";
 import SearchBar from "../searchbar/search-bar";
 import AddNew from "../sections/add-new";
 import Films from "../../../models/films.json";
+import NewPost from "../sections/new-post";
 import "./sidebar.css";
 
 // Menu to right component
