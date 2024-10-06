@@ -139,7 +139,7 @@ const SidebarExpanded = ({
                 user={user}
               />
             )}
-            {activeSection === 3 && <AddNew />}
+            {activeSection === 3 && <AddNew user={user} films={films} />}
           </div>
           <div className="profile-section">
             <img
