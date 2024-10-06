@@ -84,6 +84,7 @@ const Map: React.FC = () => {
       <leaf.MapContainer
         center={position}
         zoom={2} // Initial zoom level
+        zoomControl={false}
         style={{ height: "100vh", width: "100%" }}
         ref={setMap}
         // whenCreated={(mapInstance) => createMarkers(mapInstance, films)} // Create markers when map is created
