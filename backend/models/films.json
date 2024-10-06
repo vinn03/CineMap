@@ -8,18 +8,18 @@
 		"locations": [
 			{
 				"title": "Ohio State Reformatory",
-				"longitude": "-82.5157",
-				"latitude": "40.7840"
+				"lat": "40.784271836610586",
+				"lng": "-82.50227715529661"
 			},
 			{
 				"title": "Buxton (final scene)",
-				"longitude": "-71.4633",
-				"latitude": "43.0589"
+				"lat": "40.616678906238306",
+				"lng": "-82.42907434417643"
 			},
 			{
 				"title": "Zihuatanejo Beach",
-				"longitude": "-101.5581",
-				"latitude": "17.6376"
+				"lat": "17.641896203692394",
+				"lng": "-101.55143258223899"
 			}
 		]
 	},
@@ -32,18 +32,18 @@
 		"locations": [
 			{
 				"title": "Staten Island (Corleone Compound)",
-				"longitude": "-74.1502",
-				"latitude": "40.5743"
+				"lat": "37.81395046855017",
+				"lng": "13.29897458237543"
 			},
 			{
-				"title": "Beverly House, California",
-				"longitude": "-118.4143",
-				"latitude": "34.0728"
+				"title": "Beverly Estate, California",
+				"lat": "34.08934356885367",
+				"lng": "-118.4135521248571"
 			},
 			{
 				"title": "Savoca, Sicily (Bar Vitelli)",
-				"longitude": "15.3260",
-				"latitude": "37.9544"
+				"lat": "137.95591998387975",
+				"lng": "15.33980781391331"
 			}
 		]
 	},
@@ -56,18 +56,18 @@
 		"locations": [
 			{
 				"title": "Lower Wacker Drive, Chicago",
-				"longitude": "-87.6337",
-				"latitude": "41.8862"
+				"lat": "-41.88164680857383",
+				"lng": "87.6364112891491"
 			},
 			{
 				"title": "Trump Tower, Chicago",
-				"longitude": "-87.6267",
-				"latitude": "41.8886"
+				"lat": "41.88893915176258",
+				"lng": "-87.62639473457322"
 			},
 			{
 				"title": "Cardington Airship Hangars, UK",
-				"longitude": "-0.4266",
-				"latitude": "52.1077"
+				"lat": "52.10694349426365",
+				"lng": "-0.4290663624661803"
 			}
 		]
 	},
@@ -80,18 +80,18 @@
 		"locations": [
 			{
 				"title": "Timberline Lodge, Oregon (Overlook Hotel exterior)",
-				"longitude": "-121.7093",
-				"latitude": "45.3311"
+				"lat": "45.33132417475016",
+				"lng": "-121.71045923237924"
 			},
 			{
 				"title": "Elstree Studios, UK (interior scenes)",
-				"longitude": "-0.2939",
-				"latitude": "51.6553"
+				"longilattude": "51.658213084020844",
+				"lng": "-0.26921434501729724"
 			},
 			{
 				"title": "The Ahwahnee Hotel, California (Overlook inspiration)",
-				"longitude": "-119.5741",
-				"latitude": "37.7456"
+				"lat": "37.746202674051936",
+				"latlngtude": "-119.5743010891959"
 			}
 		]
 	},
@@ -104,18 +104,18 @@
 		"locations": [
 			{
 				"title": "Griffith Observatory, Los Angeles",
-				"longitude": "-118.3004",
-				"latitude": "34.1184"
+				"lat": "34.11857618802142",
+				"lnt": "-118.3003827745735"
 			},
 			{
 				"title": "Angels Flight, Los Angeles",
-				"longitude": "-118.2501",
-				"latitude": "34.0510"
+				"lat": "-34.05183196551239",
+				"lng": "-118.25062175312848"
 			},
 			{
 				"title": "Colorado Street Bridge, Pasadena",
-				"longitude": "-118.1656",
-				"latitude": "34.1455"
+				"lat": "34.144792717761526",
+				"lng": "-118.16445995738451"
 			}
 		]
 	}
