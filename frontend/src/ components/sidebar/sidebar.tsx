@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import SavedFilms from "../sections/saved-films";
+import SearchBar from "../searchbar/search-bar";
 import "./sidebar.css";
 
 const Sidebar: React.FC = () => {
@@ -43,7 +44,7 @@ const Sidebar: React.FC = () => {
           </button>
         </div>
         <div className="content-section">
-          {activeSection === 1 && null}
+          {activeSection === 1 && <SearchBar />}
           {activeSection === 2 && <SavedFilms films={films} />}
           {activeSection === 3 && null}
         </div>
