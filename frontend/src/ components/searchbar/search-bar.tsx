@@ -30,14 +30,14 @@ function SearchBar({ onOverviewShown }) {
 
   return (
     <div>
-      <div>
-        <input
-          placeholder="Search..."
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          onKeyDown={handleKeyPress}
-        />
-        <span>
+      {/* <div> */}
+      <input
+        placeholder="Search..."
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        onKeyDown={handleKeyPress}
+      />
+      {/* <span>
           {" "}
           <select
             value={category}
@@ -47,7 +47,7 @@ function SearchBar({ onOverviewShown }) {
             <option value="users">Users</option>
           </select>
         </span>
-      </div>
+      </div> */}
       <div>
         {category === "films"
           ? filteredFilms.map((d) => (
