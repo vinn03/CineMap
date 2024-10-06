@@ -31,7 +31,6 @@ const NewFilm: React.FC = () => {
       year,
       genre,
     };
-    console.log(newFilm);
   };
 
   return (

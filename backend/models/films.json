@@ -7,21 +7,24 @@
 		"director": "Frank Darabont",
 		"locations": [
 			{
-				"location-id": 1,
+				"id": 1,
+				"movie_id": 1,
 				"title": "Ohio State Reformatory",
 				"lat": "40.784271836610586",
 				"lng": "-82.50227715529661",
 				"img": "./images/the-shawshank-redemption/ohio-state-reformatory.jpg"
 			},
 			{
-				"location-id": 2,
+				"id": 2,
+				"movie_id": 1,
 				"title": "Buxton (final scene)",
 				"lat": "40.616678906238306",
 				"lng": "-82.42907434417643",
 				"img": "./images/the-shawshank-redemption/buxton.jpg"
 			},
 			{
-				"location-id": 3,
+				"id": 3,
+				"movie_id": 1,
 				"title": "Zihuatanejo Beach",
 				"lat": "17.641896203692394",
 				"lng": "-101.55143258223899",
@@ -37,21 +40,24 @@
 		"director": "Francis Ford Coppola",
 		"locations": [
 			{
-				"location-id": 1,
+				"id": 1,
+				"movie_id": 2,
 				"title": "Staten Island (Corleone Compound)",
 				"lat": "37.81395046855017",
 				"lng": "13.29897458237543",
 				"img": "./images/the-godfather/staten-island.jpg"
 			},
 			{
-				"location-id": 2,
+				"id": 2,
+				"movie_id": 2,
 				"title": "Beverly Estate, California",
 				"lat": "34.08934356885367",
 				"lng": "-118.4135521248571",
 				"img": "./images/the-godfather/beverly-estate.jpg"
 			},
 			{
-				"location-id": 3,
+				"id": 3,
+				"movie_id": 2,
 				"title": "Savoca, Sicily (Bar Vitelli)",
 				"lat": "137.95591998387975",
 				"lng": "15.33980781391331",
@@ -67,21 +73,24 @@
 		"director": "Christopher Nolan",
 		"locations": [
 			{
-				"location-id": 1,
+				"id": 1,
+				"movie_id": 3,
 				"title": "Lower Wacker Drive, Chicago",
 				"lat": "-41.88164680857383",
 				"lng": "87.6364112891491",
 				"img": "./images/the-dark-knight/lower-wacker-drive.jpg"
 			},
 			{
-				"location-id": 2,
+				"id": 2,
+				"movie_id": 3,
 				"title": "Trump Tower, Chicago",
 				"lat": "41.88893915176258",
 				"lng": "-87.62639473457322",
 				"img": "./images/the-dark-knight/trump-tower.jpg"
 			},
 			{
-				"location-id": 3,
+				"id": 3,
+				"movie_id": 3,
 				"title": "Cardington Airship Hangars, UK",
 				"lat": "52.10694349426365",
 				"lng": "-0.4290663624661803",
@@ -97,21 +106,24 @@
 		"director": "Stanley Kubrick",
 		"locations": [
 			{
-				"location-id": 1,
+				"id": 1,
+				"movie_id": 4,
 				"title": "Timberline Lodge, Oregon (Overlook Hotel exterior)",
 				"lat": "45.33132417475016",
 				"lng": "-121.71045923237924",
 				"img": "./images/the-shining/timberline-lodge.jpg"
 			},
 			{
-				"location-id": 2,
+				"id": 2,
+				"movie_id": 4,
 				"title": "Elstree Studios, UK (interior scenes)",
 				"lat": "51.658213084020844",
 				"lng": "-0.26921434501729724",
 				"img": "./images/the-shining/elstree-studios.jpg"
 			},
 			{
-				"location-id": 3,
+				"id": 3,
+				"movie_id": 4,
 				"title": "The Ahwahnee Hotel, California (Overlook inspiration)",
 				"lat": "37.746202674051936",
 				"lng": "-119.5743010891959",
@@ -127,21 +139,24 @@
 		"director": "Damien Chazelle",
 		"locations": [
 			{
-				"location-id": 1,
+				"id": 1,
+				"movie_id": 5,
 				"title": "Griffith Observatory, Los Angeles",
 				"lat": "34.11857618802142",
 				"lnt": "-118.3003827745735",
 				"img": "./images/lalaland/griffith-observatory.jpg"
 			},
 			{
-				"location-id": 2,
+				"id": 2,
+				"movie_id": 5,
 				"title": "Angels Flight, Los Angeles",
 				"lat": "-34.05183196551239",
 				"lng": "-118.25062175312848",
 				"img": "./images/lalaland/angels-flight.jpg"
 			},
 			{
-				"location-id": 3,
+				"id": 3,
+				"movie_id": 5,
 				"title": "Colorado Street Bridge, Pasadena",
 				"lat": "34.144792717761526",
 				"lng": "-118.16445995738451",

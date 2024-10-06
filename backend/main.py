@@ -23,7 +23,8 @@ def get_user():
             user_return_value = {
                 "email": user["email"],
                 "display_name": user["display_name"],
-                "films": user["films"]
+                "films": user["films"],
+                "posts": user["posts"]
             }
             return json.dumps(user_return_value)
     return json.dumps({"error": "User not found"}), 404
