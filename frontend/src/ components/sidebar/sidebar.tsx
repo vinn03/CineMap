@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SavedFilms from "../sections/saved-films";
 import SearchBar from "../searchbar/search-bar";
-import NewFilm from "../sections/new-film";
+import AddNew from "../sections/add-new";
 import Films from "../../../models/films.json";
 import "./sidebar.css";
 
@@ -48,7 +48,7 @@ const SidebarCollapsed = ({
         <div
           className="sidebar-btn collapsed-btn"
           onClick={() => {
-            setActiveSection(3); // Set active section to 'New Film'
+            setActiveSection(3); // Set active section to 'Add New'
             toggleSidebar(); // Expand the sidebar
           }}
         >
@@ -113,7 +113,7 @@ const SidebarExpanded = ({
             className={`sidebar-btn ${activeSection === 3 ? "active" : ""}`}
             onClick={() => toggleSection(3)}
           >
-            New Film
+            Add New
           </button>
         </div>
         <div>
@@ -124,7 +124,7 @@ const SidebarExpanded = ({
             {activeSection === 2 && (
               <SavedFilms films={Films} onOverviewShown={onOverviewShown} />
             )}
-            {activeSection === 3 && <NewFilm />}
+            {activeSection === 3 && <AddNew />}
           </div>
           <div className="profile-section">
             <img
@@ -138,8 +138,6 @@ const SidebarExpanded = ({
     </>
   );
 };
-
-
 
 // expandable, click handling sidebar
 const Sidebar = () => {
