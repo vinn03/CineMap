@@ -1,9 +1,10 @@
 import { useState } from "react";
+import Entry from "../sections/entry";
 import Films from "../../../models/films.json";
 import Users from "../../../models/users.json";
 import "../../index.css";
 
-function SearchBar() {
+function SearchBar({ onOverviewShown }) {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("films");
 
@@ -50,14 +51,22 @@ function SearchBar() {
       <div>
         {category === "films"
           ? filteredFilms.map((d) => (
-              <button className="entry" key={d.id}>
-                {d.title}
-              </button>
+              <Entry
+                key={d.id}
+                name={d.title}
+                type="film"
+                info={d}
+                onOverviewShown={onOverviewShown}
+              />
             ))
           : filteredUsers.map((d) => (
-              <button className="entry" key={d.email}>
-                {d.display_name}
-              </button>
+              <Entry
+                key={d.email}
+                name={d.display_name}
+                type="user"
+                info={d}
+                onOverviewShown={onOverviewShown}
+              />
             ))}
       </div>
     </div>
