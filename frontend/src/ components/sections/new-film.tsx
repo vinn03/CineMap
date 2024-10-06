@@ -3,7 +3,7 @@ import "./sections.css";
 
 const NewFilm: React.FC = () => {
 	return (
-		<div className="new-film-form">
+		<div className="new-form">
 			<h3>Add New Movie</h3>
 			<table>
 				<tr>
