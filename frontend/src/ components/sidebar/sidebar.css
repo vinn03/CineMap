@@ -1,73 +1,63 @@
 /* Sidebar.css */
 .sidebar {
-  position: fixed; /* Ensure it's fixed over the map */
-  top: 0;
-  left: 0;
-  width: 250px;
-  height: 100vh;
-  background-color: beige;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: transform 0.3s ease;
-  transform: translateX(0);
-  z-index: 1000; /* Make sure it's higher than the map's z-index */
+	position: fixed; /* Ensure it's fixed over the map */
+	top: 0;
+	left: 0;
+	width: 250px;
+	height: 100vh;
+	background-color: beige;
+	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	transition: transform 0.3s ease;
+	transform: translateX(0);
+	z-index: 1000; /* Make sure it's higher than the map's z-index */
 }
 
 .sidebar.open {
-  transform: translateX(0);
-}
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 900; /* Below the sidebar, but above the map */
+	transform: translateX(0);
 }
 
 .top-sections {
-  padding: 1rem;
+	padding: 1rem;
 }
 
 .sidebar-btn {
-  display: block;
-  background: none;
-  border: none;
-  padding: 0.75rem 1rem;
-  text-align: left;
-  width: 100%;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
+	display: block;
+	background: none;
+	border: none;
+	padding: 0.75rem 1rem;
+	text-align: left;
+	width: 100%;
+	font-size: 1.2rem;
+	cursor: pointer;
+	transition: background-color 0.3s;
 }
 
 .sidebar-btn.active {
-  background-color: #ddd;
+	background-color: #ddd;
 }
 
 .sidebar-btn:hover {
-  background-color: #f0f0f0;
+	background-color: #f0f0f0;
 }
 
 .content-section {
-  flex-grow: 1;
-  padding: 1rem;
+	flex-grow: 1;
+	padding: 1rem;
 }
 
 .profile-section {
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .profile-icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #ccc; /* Placeholder for the profile icon */
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #ccc; /* Placeholder for the profile icon */
 }
