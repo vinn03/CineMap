@@ -7,11 +7,12 @@ import L from "leaflet";
 const position = [49.276, -122.918]; // SFU
 
 interface MapProps {
-	locations: any[];
+  locations: any[];
+  user: any;
 }
 
-const Map: React.FC<MapProps> = ({ locations }) => {
-	// This function creates markers and popups
+const Map: React.FC<MapProps> = ({ locations, user }) => {
+  // This function creates markers and popups
 
 	const [map, setMap] = useState(null);
 	const [markers, setMarkers] = useState([]);
@@ -33,6 +34,7 @@ const Map: React.FC<MapProps> = ({ locations }) => {
           <div>
             <h3>${location.title}</h3>
             <img src="${location.img}" alt="${location.title}" style="width: 100px;" />
+            <h4>
           </div>
         `;
 
