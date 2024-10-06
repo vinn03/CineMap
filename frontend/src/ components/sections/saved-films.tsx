@@ -12,12 +12,14 @@ interface SavedFilmsProps {
 
 const SavedFilms: React.FC<SavedFilmsProps> = ({
   films,
+  user,
   onOverviewShown,
   setLocations,
 }) => {
+  const savedFilms = films.filter((film) => user.films.includes(film.id));
   return (
     <div className="section">
-      {films.map((film, index) => (
+      {savedFilms.map((film, index) => (
         <Entry
           key={index}
           name={film.title}
