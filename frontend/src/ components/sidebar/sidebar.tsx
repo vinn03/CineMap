@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./Sidebar.css"; // Optional for custom styles
-import Section from "../section/section";
+import SavedFilms from "../sections/saved-films";
+import SearchBar from "../searchbar/search-bar";
 import "./sidebar.css";
 
 const Sidebar: React.FC = () => {
@@ -41,9 +41,9 @@ const Sidebar: React.FC = () => {
           </button>
         </div>
         <div className="content-section">
-          {activeSection === 1 && <Section sectionName="Section 1 Content" />}
-          {activeSection === 2 && <Section sectionName="Section 2 Content" />}
-          {activeSection === 3 && <Section sectionName="Section 3 Content" />}
+          {activeSection === 1 && <SearchBar />}
+          {activeSection === 2 && <SavedFilms films={films} />}
+          {activeSection === 3 && null}
         </div>
         <div className="profile-section">
           <img src="profile.png" alt="Profile" className="profile-icon" />
