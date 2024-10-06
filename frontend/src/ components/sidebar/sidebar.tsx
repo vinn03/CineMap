@@ -75,9 +75,11 @@ const SidebarExpanded = ({
   setActiveSection,
   onOverviewShown,
   setLocations,
+  user,
 }: {
   toggleSidebar: () => void;
   activeSection: number | null;
+  user: any;
   setActiveSection: (sectionIndex: number) => void;
   onOverviewShown: (component: any) => void;
   setLocations: (locations: any[]) => void;
@@ -132,6 +134,7 @@ const SidebarExpanded = ({
                 films={Films}
                 onOverviewShown={onOverviewShown}
                 setLocations={setLocations}
+                user={user}
               />
             )}
             {activeSection === 3 && <AddNew />}
@@ -150,7 +153,7 @@ const SidebarExpanded = ({
 };
 
 // expandable, click handling sidebar
-const Sidebar = ({ setLocations }) => {
+const Sidebar = ({ setLocations, user }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [activeSection, setActiveSection] = useState<number | null>(null);
   const [OverviewComponent, setOverviewComponent] = useState<any>(null);
@@ -175,6 +178,7 @@ const Sidebar = ({ setLocations }) => {
           setActiveSection={setActiveSection}
           onOverviewShown={handleOverviewShown}
           setLocations={setLocations}
+          user={user}
         />
       ) : (
         <SidebarCollapsed

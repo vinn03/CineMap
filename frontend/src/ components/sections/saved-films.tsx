@@ -5,6 +5,7 @@ import "../../index.css";
 
 interface SavedFilmsProps {
   films: any[];
+  user: any;
   onOverviewShown: (component: any) => void;
   setLocations: (locations: any[]) => void;
 }
