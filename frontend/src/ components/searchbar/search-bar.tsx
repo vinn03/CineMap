@@ -4,7 +4,7 @@ import Films from "../../../models/films.json";
 import Users from "../../../models/users.json";
 import "../../index.css";
 
-function SearchBar() {
+function SearchBar({ onOverviewShown }) {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("films");
 
@@ -51,10 +51,22 @@ function SearchBar() {
       <div>
         {category === "films"
           ? filteredFilms.map((d) => (
-              <Entry key={d.id} name={d.title} type="film" info={d} />
+              <Entry
+                key={d.id}
+                name={d.title}
+                type="film"
+                info={d}
+                onOverviewShown={onOverviewShown}
+              />
             ))
           : filteredUsers.map((d) => (
-              <Entry key={d.email} name={d.display_name} type="user" info={d} />
+              <Entry
+                key={d.email}
+                name={d.display_name}
+                type="user"
+                info={d}
+                onOverviewShown={onOverviewShown}
+              />
             ))}
       </div>
     </div>

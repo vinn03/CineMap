@@ -5,13 +5,20 @@ import "../../index.css";
 
 interface SavedFilmsProps {
   films: any[];
+  onOverviewShown: (component: any) => void;
 }
 
-const SavedFilms: React.FC<SavedFilmsProps> = ({ films }) => {
+const SavedFilms: React.FC<SavedFilmsProps> = ({ films, onOverviewShown }) => {
   return (
     <div className="section">
       {films.map((film, index) => (
-        <Entry key={index} name={film.title} type="film" info={film} />
+        <Entry
+          key={index}
+          name={film.title}
+          type="film"
+          info={film}
+          onOverviewShown={onOverviewShown}
+        />
       ))}
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import SavedFilms from "../sections/saved-films";
 import SearchBar from "../searchbar/search-bar";
 import NewFilm from "../sections/new-film";
@@ -71,13 +71,13 @@ const SidebarExpanded = ({
   toggleSidebar,
   activeSection,
   setActiveSection,
+  onOverviewShown,
 }: {
   toggleSidebar: () => void;
   activeSection: number | null;
   setActiveSection: (sectionIndex: number) => void;
+  onOverviewShown: (component: any) => void;
 }) => {
-  const films = ["Film 1", "Film 2", "Film 3", "Film 4", "Film 5"]; // Dummy data for saved films
-
   const toggleSection = (sectionIndex: number) => {
     if (activeSection === sectionIndex) {
       setActiveSection(null); // Collapse if the same section is clicked
@@ -117,8 +117,12 @@ const SidebarExpanded = ({
         </div>
         <div>
           <div className="content-section">
-            {activeSection === 1 && <SearchBar />}
-            {activeSection === 2 && <SavedFilms films={films} />}
+            {activeSection === 1 && (
+              <SearchBar onOverviewShown={onOverviewShown} />
+            )}
+            {activeSection === 2 && (
+              <SavedFilms films={Films} onOverviewShown={onOverviewShown} />
+            )}
             {activeSection === 3 && <NewFilm />}
           </div>
           <div className="profile-section">
@@ -138,9 +142,18 @@ const SidebarExpanded = ({
 const Sidebar = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [activeSection, setActiveSection] = useState<number | null>(null);
+  const [overviewComponent, setOverviewComponent] = useState<any>(null);
 
   const toggleSidebar = () => {
     setIsExpanded(!isExpanded);
+  };
+
+  const handleOverviewShown = (component: any) => {
+    if (component) {
+      toggleSidebar();
+    }
+    console.log({ component });
+    setOverviewComponent(component);
   };
 
   return (
@@ -150,6 +163,7 @@ const Sidebar = () => {
           toggleSidebar={toggleSidebar}
           activeSection={activeSection}
           setActiveSection={setActiveSection}
+          onOverviewShown={handleOverviewShown}
         />
       ) : (
         <SidebarCollapsed
@@ -157,6 +171,7 @@ const Sidebar = () => {
           setActiveSection={setActiveSection}
         />
       )}
+      {overviewComponent ? overviewComponent : null}
     </div>
   );
 };

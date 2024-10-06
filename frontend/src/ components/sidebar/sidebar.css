@@ -1,4 +1,5 @@
 /* Sidebar - Common Styles */
+
 .sidebar {
 	position: fixed; /* Ensure it's fixed over the viewport */
 	top: 0;
