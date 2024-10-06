@@ -1,30 +1,122 @@
 [
-    {
-        "id": 1,
-        "title": "The Shawshank Redemption",
-        "year": 1994,
-        "genre": "Drama",
-        "director": "Frank Darabont"
-    },
-    {
-        "id": 2,
-        "title": "The Godfather",
-        "year": 1972,
-        "genre": "Crime",
-        "director": "Francis Ford Coppola"
-    },
-    {
-        "id": 3,
-        "title": "The Dark Knight",
-        "year": 2008,
-        "genre": "Action",
-        "director": "Christopher Nolan"
-    },
-    {
-        "id": 4,
-        "title": "The Shining",
-        "year": 1980,
-        "genre": "Horror",
-        "director": "Stanley Kubrick"
-    }
+	{
+		"id": 1,
+		"title": "The Shawshank Redemption",
+		"year": 1994,
+		"genre": "Drama",
+		"director": "Frank Darabont",
+		"locations": [
+			{
+				"title": "Ohio State Reformatory",
+				"longitude": "-82.5157",
+				"latitude": "40.7840"
+			},
+			{
+				"title": "Buxton (final scene)",
+				"longitude": "-71.4633",
+				"latitude": "43.0589"
+			},
+			{
+				"title": "Zihuatanejo Beach",
+				"longitude": "-101.5581",
+				"latitude": "17.6376"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"title": "The Godfather",
+		"year": 1972,
+		"genre": "Crime",
+		"director": "Francis Ford Coppola",
+		"locations": [
+			{
+				"title": "Staten Island (Corleone Compound)",
+				"longitude": "-74.1502",
+				"latitude": "40.5743"
+			},
+			{
+				"title": "Beverly House, California",
+				"longitude": "-118.4143",
+				"latitude": "34.0728"
+			},
+			{
+				"title": "Savoca, Sicily (Bar Vitelli)",
+				"longitude": "15.3260",
+				"latitude": "37.9544"
+			}
+		]
+	},
+	{
+		"id": 3,
+		"title": "The Dark Knight",
+		"year": 2008,
+		"genre": "Action",
+		"director": "Christopher Nolan",
+		"locations": [
+			{
+				"title": "Lower Wacker Drive, Chicago",
+				"longitude": "-87.6337",
+				"latitude": "41.8862"
+			},
+			{
+				"title": "Trump Tower, Chicago",
+				"longitude": "-87.6267",
+				"latitude": "41.8886"
+			},
+			{
+				"title": "Cardington Airship Hangars, UK",
+				"longitude": "-0.4266",
+				"latitude": "52.1077"
+			}
+		]
+	},
+	{
+		"id": 4,
+		"title": "The Shining",
+		"year": 1980,
+		"genre": "Horror",
+		"director": "Stanley Kubrick",
+		"locations": [
+			{
+				"title": "Timberline Lodge, Oregon (Overlook Hotel exterior)",
+				"longitude": "-121.7093",
+				"latitude": "45.3311"
+			},
+			{
+				"title": "Elstree Studios, UK (interior scenes)",
+				"longitude": "-0.2939",
+				"latitude": "51.6553"
+			},
+			{
+				"title": "The Ahwahnee Hotel, California (Overlook inspiration)",
+				"longitude": "-119.5741",
+				"latitude": "37.7456"
+			}
+		]
+	},
+	{
+		"id": 5,
+		"title": "La La Land",
+		"year": 2016,
+		"genre": "Musical",
+		"director": "Damien Chazelle",
+		"locations": [
+			{
+				"title": "Griffith Observatory, Los Angeles",
+				"longitude": "-118.3004",
+				"latitude": "34.1184"
+			},
+			{
+				"title": "Angels Flight, Los Angeles",
+				"longitude": "-118.2501",
+				"latitude": "34.0510"
+			},
+			{
+				"title": "Colorado Street Bridge, Pasadena",
+				"longitude": "-118.1656",
+				"latitude": "34.1455"
+			}
+		]
+	}
 ]
