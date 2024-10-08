@@ -4,6 +4,8 @@ StormHacks 2024 @ SFU
 Authors: Kevin Guo, Vincent Liu, Leo Zhi
 
 # Running the project locally
+>$npm install dependencies
+>
 >$cd backend  
 >$python3 -m venv .venv  
 >$source .venv/bin/activate  
