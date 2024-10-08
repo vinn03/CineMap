@@ -10,7 +10,7 @@ Authors: Kevin Guo, Vincent Liu, Leo Zhi
 >$python3 -m venv .venv  
 >$source .venv/bin/activate  
 >$pip install flask flask-cors  
->flask --app main run  
+>$flask --app main run  
 >
->$cd ../frontend  
+>$cd frontend  
 >$npm run dev  
