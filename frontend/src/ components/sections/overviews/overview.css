@@ -1,13 +1,36 @@
 .overview {
-    position: fixed;
-    background-color: beige;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 90px;
-    padding: 1rem;
-    width: 250px;
-    z-index: 1000;
-    text-align: center;
+	position: fixed;
+	background-color: rgb(239, 239, 208);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 90px;
+	padding: 1rem;
+	width: 250px;
+	z-index: 1000;
+	text-align: center;
+}
+
+.location-button {
+	display: block;
+	margin: 10px 0;
+	padding: 10px;
+	background-color: white;
+	border: none;
+	cursor: default;
+	font-size: 16px;
+	text-align: left;
+	width: 100%;
+}
+
+.location-button:hover {
+	background-color: #e0e0e0;
+}
+
+.close {
+	display: block;
+	padding: 10px;
+	background-color: white;
+	border: none;
 }

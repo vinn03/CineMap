@@ -1,177 +1,215 @@
 [
-    {
-        "id": 1,
-        "title": "The Shawshank Redemption",
-        "year": 1994,
-        "genre": "Drama",
-        "director": "Frank Darabont",
-        "locations": [
-            {
-                "id": 1,
-                "movie_id": 1,
-                "title": "Ohio State Reformatory",
-                "lat": "40.784271836610586",
-                "lng": "-82.50227715529661",
-                "img": "./images/the-shawshank-redemption/ohio-state-reformatory.jpg"
-            },
-            {
-                "id": 2,
-                "movie_id": 1,
-                "title": "Buxton (final scene)",
-                "lat": "40.616678906238306",
-                "lng": "-82.42907434417643",
-                "img": "./images/the-shawshank-redemption/buxton.jpg"
-            },
-            {
-                "id": 3,
-                "movie_id": 1,
-                "title": "Zihuatanejo Beach",
-                "lat": "17.641896203692394",
-                "lng": "-101.55143258223899",
-                "img": "./images/the-shawshank-redemption/zihuatanjo.jpg"
-            }
-        ]
-    },
-    {
-        "id": 2,
-        "title": "The Godfather",
-        "year": 1972,
-        "genre": "Crime",
-        "director": "Francis Ford Coppola",
-        "locations": [
-            {
-                "id": 1,
-                "movie_id": 2,
-                "title": "Staten Island (Corleone Compound)",
-                "lat": "37.81395046855017",
-                "lng": "13.29897458237543",
-                "img": "./images/the-godfather/staten-island.jpg"
-            },
-            {
-                "id": 2,
-                "movie_id": 2,
-                "title": "Beverly Estate, California",
-                "lat": "34.08934356885367",
-                "lng": "-118.4135521248571",
-                "img": "./images/the-godfather/beverly-estate.jpg"
-            },
-            {
-                "id": 3,
-                "movie_id": 2,
-                "title": "Savoca, Sicily (Bar Vitelli)",
-                "lat": "137.95591998387975",
-                "lng": "15.33980781391331",
-                "img": "./images/the-godfather/bar-vitelli.jpg"
-            }
-        ]
-    },
-    {
-        "id": 3,
-        "title": "The Dark Knight",
-        "year": 2008,
-        "genre": "Action",
-        "director": "Christopher Nolan",
-        "locations": [
-            {
-                "id": 1,
-                "movie_id": 3,
-                "title": "Lower Wacker Drive, Chicago",
-                "lat": "-41.88164680857383",
-                "lng": "87.6364112891491",
-                "img": "./images/the-dark-knight/lower-wacker-drive.jpg"
-            },
-            {
-                "id": 2,
-                "movie_id": 3,
-                "title": "Trump Tower, Chicago",
-                "lat": "41.88893915176258",
-                "lng": "-87.62639473457322",
-                "img": "./images/the-dark-knight/trump-tower.jpg"
-            },
-            {
-                "id": 3,
-                "movie_id": 3,
-                "title": "Cardington Airship Hangars, UK",
-                "lat": "52.10694349426365",
-                "lng": "-0.4290663624661803",
-                "img": "./images/the-dark-knight/cardington-airship-hangards.jpg"
-            }
-        ]
-    },
-    {
-        "id": 4,
-        "title": "The Shining",
-        "year": 1980,
-        "genre": "Horror",
-        "director": "Stanley Kubrick",
-        "locations": [
-            {
-                "id": 1,
-                "movie_id": 4,
-                "title": "Timberline Lodge, Oregon (Overlook Hotel exterior)",
-                "lat": "45.33132417475016",
-                "lng": "-121.71045923237924",
-                "img": "./images/the-shining/timberline-lodge.jpg"
-            },
-            {
-                "id": 2,
-                "movie_id": 4,
-                "title": "Elstree Studios, UK (interior scenes)",
-                "lat": "51.658213084020844",
-                "lng": "-0.26921434501729724",
-                "img": "./images/the-shining/elstree-studios.jpg"
-            },
-            {
-                "id": 3,
-                "movie_id": 4,
-                "title": "The Ahwahnee Hotel, California (Overlook inspiration)",
-                "lat": "37.746202674051936",
-                "lng": "-119.5743010891959",
-                "img": "./images/the-shining/the-ahwahee-hotel.jpg"
-            }
-        ]
-    },
-    {
-        "id": 5,
-        "title": "La La Land",
-        "year": 2016,
-        "genre": "Musical",
-        "director": "Damien Chazelle",
-        "locations": [
-            {
-                "id": 1,
-                "movie_id": 5,
-                "title": "Griffith Observatory, Los Angeles",
-                "lat": "34.11857618802142",
-                "lnt": "-118.3003827745735",
-                "img": "./images/lalaland/griffith-observatory.jpg"
-            },
-            {
-                "id": 2,
-                "movie_id": 5,
-                "title": "Angels Flight, Los Angeles",
-                "lat": "-34.05183196551239",
-                "lng": "-118.25062175312848",
-                "img": "./images/lalaland/angels-flight.jpg"
-            },
-            {
-                "id": 3,
-                "movie_id": 5,
-                "title": "Colorado Street Bridge, Pasadena",
-                "lat": "34.144792717761526",
-                "lng": "-118.16445995738451",
-                "img": "./images/lalaland/colorado-street-bridge.jpg"
-            }
-        ]
-    },
-    {
-        "title": "yes",
-        "year": "1999",
-        "genre": "yes"
-    },
-    {
-        "title": "test",
-        "year": "1999",
-        "genre": "test"
-    }
+	{
+		"id": 1,
+		"title": "The Shawshank Redemption",
+		"year": 1994,
+		"genre": "Drama",
+		"director": "Frank Darabont",
+		"locations": [
+			{
+				"id": 1,
+				"movie_id": 1,
+				"title": "Ohio State Reformatory",
+				"lat": "40.784271836610586",
+				"lng": "-82.50227715529661",
+				"img": "./images/the-shawshank-redemption/ohio-state-reformatory.jpg"
+			},
+			{
+				"id": 2,
+				"movie_id": 1,
+				"title": "Buxton (final scene)",
+				"lat": "40.616678906238306",
+				"lng": "-82.42907434417643",
+				"img": "./images/the-shawshank-redemption/buxton.jpg"
+			},
+			{
+				"id": 3,
+				"movie_id": 1,
+				"title": "Zihuatanejo Beach",
+				"lat": "17.641896203692394",
+				"lng": "-101.55143258223899",
+				"img": "./images/the-shawshank-redemption/zihuatanjo.jpg"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"title": "The Godfather",
+		"year": 1972,
+		"genre": "Crime",
+		"director": "Francis Ford Coppola",
+		"locations": [
+			{
+				"id": 1,
+				"movie_id": 2,
+				"title": "Staten Island (Corleone Compound)",
+				"lat": "37.81395046855017",
+				"lng": "13.29897458237543",
+				"img": "./images/the-godfather/staten-island.jpg"
+			},
+			{
+				"id": 2,
+				"movie_id": 2,
+				"title": "Beverly Estate, California",
+				"lat": "34.08934356885367",
+				"lng": "-118.4135521248571",
+				"img": "./images/the-godfather/beverly-estate.jpg"
+			},
+			{
+				"id": 3,
+				"movie_id": 2,
+				"title": "Savoca, Sicily (Bar Vitelli)",
+				"lat": "137.95591998387975",
+				"lng": "15.33980781391331",
+				"img": "./images/the-godfather/bar-vitelli.jpg"
+			}
+		]
+	},
+	{
+		"id": 3,
+		"title": "The Dark Knight",
+		"year": 2008,
+		"genre": "Action",
+		"director": "Christopher Nolan",
+		"locations": [
+			{
+				"id": 1,
+				"movie_id": 3,
+				"title": "Lower Wacker Drive, Chicago",
+				"lat": "-41.88164680857383",
+				"lng": "87.6364112891491",
+				"img": "./images/the-dark-knight/lower-wacker-drive.jpg"
+			},
+			{
+				"id": 2,
+				"movie_id": 3,
+				"title": "Trump Tower, Chicago",
+				"lat": "41.88893915176258",
+				"lng": "-87.62639473457322",
+				"img": "./images/the-dark-knight/trump-tower.jpg"
+			},
+			{
+				"id": 3,
+				"movie_id": 3,
+				"title": "Cardington Airship Hangars, UK",
+				"lat": "52.10694349426365",
+				"lng": "-0.4290663624661803",
+				"img": "./images/the-dark-knight/cardington-airship-hangards.jpg"
+			}
+		]
+	},
+	{
+		"id": 4,
+		"title": "The Shining",
+		"year": 1980,
+		"genre": "Horror",
+		"director": "Stanley Kubrick",
+		"locations": [
+			{
+				"id": 1,
+				"movie_id": 4,
+				"title": "Timberline Lodge, Oregon (Overlook Hotel exterior)",
+				"lat": "45.33132417475016",
+				"lng": "-121.71045923237924",
+				"img": "./images/the-shining/timberline-lodge.jpg"
+			},
+			{
+				"id": 2,
+				"movie_id": 4,
+				"title": "Elstree Studios, UK (interior scenes)",
+				"lat": "51.658213084020844",
+				"lng": "-0.26921434501729724",
+				"img": "./images/the-shining/elstree-studios.jpg"
+			},
+			{
+				"id": 3,
+				"movie_id": 4,
+				"title": "The Ahwahnee Hotel, California (Overlook inspiration)",
+				"lat": "37.746202674051936",
+				"lng": "-119.5743010891959",
+				"img": "./images/the-shining/the-ahwahee-hotel.jpg"
+			}
+		]
+	},
+	{
+		"id": 5,
+		"title": "La La Land",
+		"year": 2016,
+		"genre": "Musical",
+		"director": "Damien Chazelle",
+		"locations": [
+			{
+				"id": 1,
+				"movie_id": 5,
+				"title": "Griffith Observatory, Los Angeles",
+				"lat": "34.11857618802142",
+				"lng": "-118.3003827745735",
+				"img": "./images/lalaland/griffith-observatory.jpg"
+			},
+			{
+				"id": 2,
+				"movie_id": 5,
+				"title": "Angels Flight, Los Angeles",
+				"lat": "-34.05183196551239",
+				"lng": "-118.25062175312848",
+				"img": "./images/lalaland/angels-flight.jpg"
+			},
+			{
+				"id": 3,
+				"movie_id": 5,
+				"title": "Colorado Street Bridge, Pasadena",
+				"lat": "34.144792717761526",
+				"lng": "-118.16445995738451",
+				"img": "./images/lalaland/colorado-street-bridge.jpg"
+			},
+			{
+				"id": 4,
+				"movie_id": 5,
+				"title": "Hermosa Beach Pier, Hermosa Beach",
+				"lat": "33.8622366",
+				"lng": "-118.4003323",
+				"img": "./images/lalaland/hermosa-beach-pier.jpg"
+			},
+			{
+				"id": 5,
+				"movie_id": 5,
+				"title": "Warner Bros. Studios, Burbank",
+				"lat": "34.1495898",
+				"lng": "-118.3389403",
+				"img": "./images/lalaland/warner-bros-studios.jpg"
+			},
+			{
+				"id": 6,
+				"movie_id": 5,
+				"title": "Watts Towers, Los Angeles",
+				"lat": "33.938611",
+				"lng": "-118.241111",
+				"img": "./images/lalaland/watts-towers.jpg"
+			},
+			{
+				"id": 7,
+				"movie_id": 5,
+				"title": "Cathy’s Corner, Mount Hollywood Drive",
+				"lat": "34.1350032",
+				"lng": "-118.3058067",
+				"img": "./images/lalaland/cathys-corner.jpg"
+			},
+			{
+				"id": 8,
+				"movie_id": 5,
+				"title": "The Lighthouse Café, Hermosa Beach",
+				"lat": "33.8622077",
+				"lng": "-118.3998323",
+				"img": "./images/lalaland/lighthouse-cafe.jpg"
+			},
+			{
+				"id": 9,
+				"movie_id": 5,
+				"title": "Los Angeles County Museum of Art (LACMA), Los Angeles",
+				"lat": "34.063511",
+				"lng": "-118.357348",
+				"img": "./images/lalaland/lacma.jpg"
+			}
+		]
+	}
 ]
