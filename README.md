@@ -12,5 +12,6 @@ Authors: Kevin Guo, Vincent Liu, Leo Zhi
 >$pip install flask flask-cors  
 >$flask --app main run  
 >
->$cd frontend  
+>$cd frontend
+>$npm install
 >$npm run dev  
