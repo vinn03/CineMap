@@ -1,10 +1,9 @@
 // npm install leaflet react-leaflet
-import React, { useEffect, useState } from "react";
-import * as leaf from "react-leaflet";
-import "leaflet/dist/leaflet.css";
-import L from "leaflet";
+import React, { useEffect, useState, useRef } from "react";
+import maplibregl from "maplibre-gl";
+import "maplibre-gl/dist/maplibre-gl.css";
 
-const position = [49.276, -122.918]; // SFU
+const API_KEY = import.meta.env.VITE_MAPTILER_API_KEY;
 
 interface MapProps {
   locations: any[];
@@ -12,99 +11,74 @@ interface MapProps {
 }
 
 const Map: React.FC<MapProps> = ({ locations, user }) => {
-  // This function creates markers and popups
-
-  const [map, setMap] = useState(null);
+  const mapRef = useRef(null);
+  const mapContainerRef = useRef(null);
   const [markers, setMarkers] = useState([]);
 
-  const createMarkers = (map, locations) => {
-    markers.forEach((marker) => {
-      marker.remove();
-    });
+  const position: [number, number] = [-122.918, 49.276]; // SFU
+  const zoom: number = 2;
 
+  // map initialization
+  useEffect(() => {
+    if (mapRef.current) return;
+    mapRef.current = new maplibregl.Map({
+      container: mapContainerRef.current,
+      style: `https://api.maptiler.com/maps/basic-v2/style.json?key=${API_KEY}`,
+      center: position,
+      zoom: zoom,
+    });
+  }, [API_KEY, position, zoom]);
+
+  // add markers to the map
+  useEffect(() => {
+    if (!mapRef.current) return;
+
+    const map = mapRef.current;
+
+    // remove existing markers
+    markers.forEach((marker) => marker.remove());
+
+    // add new markers
     const newMarkers = locations.map((location) => {
       const lat = parseFloat(location.lat);
       const lng = parseFloat(location.lng);
 
-      // Create a marker
-      const marker = L.marker([lat, lng]).addTo(map);
+      const marker = new maplibregl.Marker().setLngLat([lng, lat]).addTo(map);
 
-      const posts = user.posts.filter(
+      // Create popup content
+      const userPosts = user?.posts?.filter(
         (post) =>
           post.location_id === location.id &&
           post.movie_id === location.movie_id
       );
-      // Create a popup with HTML content
-      const popupContent = `
-          <div>
-            <h3>${location.title}</h3>
-            <img src="${location.img}" alt="${
-        location.title
-      }" style="width: 100px;" />
-            <h4>Posts</h4>
-            ${posts
-              .map(
-                (post) => `
-                  <div>
-                    <p>${post.review}</p>
-                  </div>
-                `
-              )
-              .join("")}
-          </div>
-        `;
 
-      // Bind the popup to the marker
-      marker.bindPopup(popupContent);
+      let popupContent = `<h3>${location.title}</h3>`;
+
+      if (userPosts?.length > 0) {
+        popupContent += '<div class="reviews">';
+        userPosts.forEach((post) => {
+          popupContent += `<p>${post.review}</p>`;
+        });
+        popupContent += "</div>";
+      }
+
+      const popup = new maplibregl.Popup({ offset: 25 }).setHTML(popupContent);
+
+      marker.setPopup(popup);
 
       return marker;
     });
 
     setMarkers(newMarkers);
-  };
-
-  // Custom zoom control component
-  const CustomZoomControl: React.FC<{ position: string }> = ({ position }) => {
-    const map = leaf.useMap();
-
-    useEffect(() => {
-      // Add the zoom control to the map with the specified position
-      const zoomControl = L.control.zoom({
-        position: position, // bottomright
-      });
-
-      zoomControl.addTo(map);
-
-      // Clean up the zoom control when the component unmounts
-      return () => {
-        map.removeControl(zoomControl);
-      };
-    }, [map, position]); // Make sure to include dependencies
-
-    return null; // This component doesn't render anything visible
-  };
-
-  useEffect(() => {
-    if (map) {
-      createMarkers(map, locations);
-    }
-  }, [map, locations]);
+  }, [locations]);
 
   return (
     <div>
-      <leaf.MapContainer
-        center={position}
-        zoom={5} // Initial zoom level
-        zoomControl={false}
+      <div
+        ref={mapContainerRef}
+        className="map"
         style={{ height: "100vh", width: "100vw" }}
-        ref={setMap}
-      >
-        <leaf.TileLayer
-          url="https://api.maptiler.com/maps/basic-v2/256/{z}/{x}/{y}.png?key=JHp8pdRRwvaUIipR78yo"
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        />
-        <CustomZoomControl position="bottomright" />
-      </leaf.MapContainer>
+      />
     </div>
   );
 };

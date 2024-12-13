@@ -140,6 +140,31 @@
                 "movie_id": 5,
                 "location_id": 1,
                 "review": "Very nice bridge! - Leo Zhi"
+            },
+            {
+                "movie_id": 1,
+                "location_id": 1,
+                "review": "haha"
+            },
+            {
+                "movie_id": 2,
+                "location_id": 1,
+                "review": "teststset"
+            },
+            {
+                "movie_id": 1,
+                "location_id": 1,
+                "review": "test"
+            },
+            {
+                "movie_id": 5,
+                "location_id": 2,
+                "review": "asdf"
+            },
+            {
+                "movie_id": 1,
+                "location_id": 1,
+                "review": "test"
             }
         ]
     },
